@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sherit is a cross-platform local Wi-Fi chat and file transfer app for iPhone, Android, Mac, and Windows.">
+  <meta name="theme-color" content="#007AFF">
+  <title>Sherit - Local Wi-Fi Chat and File Transfer</title>
+  <link rel="stylesheet" href="css/styles.css?v=20260702">
+</head>
+<body data-page="home">
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-mark">
+          <img src="assets/images/logo/sherit_logo.png" alt="Sherit Logo" data-optional-image>
+          <span class="logo-fallback">S</span>
+        </span>
+        <span>Sherit</span>
+      </a>
+
+      <div class="nav-toggle" onclick="toggleMobileMenu()" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="nav-links" id="navLinks">
+        <a href="index.html" class="active" data-i18n="nav.home">Home</a>
+        <a href="#screenshots" data-i18n="nav.screenshots">Screenshots</a>
+        <a href="#features" data-i18n="nav.features">Features</a>
+        <a href="privacy.html" data-i18n="nav.privacy">Privacy</a>
+        <a href="terms.html" data-i18n="nav.terms">Terms</a>
+        <a href="support.html" data-i18n="nav.support">Support</a>
+      </div>
+
+      <div class="navbar-right">
+        <div class="language-selector" id="language-selector">
+          <button class="language-btn" onclick="toggleLanguageDropdown()" type="button">
+            <span class="current-lang">English</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" fill="currentColor"/>
+            </svg>
+          </button>
+          <div class="lang-dropdown"></div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content fade-in">
+          <div class="hero-kicker" data-i18n="hero.kicker">Local Wi-Fi sharing</div>
+          <h1 data-i18n="hero.title">Chat and transfer files across nearby devices.</h1>
+          <p class="hero-subtitle" data-i18n="hero.subtitle">Sherit helps nearby devices share messages and files on the same Wi-Fi without accounts or cloud uploads.</p>
+          <div class="hero-buttons">
+            <a href="#download" class="btn btn-primary">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 3a1 1 0 0 1 1 1v8.59l2.3-2.3a1 1 0 1 1 1.4 1.42l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 1 1 1.4-1.42l2.3 2.3V4a1 1 0 0 1 1-1Zm-7 14a1 1 0 0 1 1 1v1h12v-1a1 1 0 1 1 2 0v2a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1Z" fill="currentColor"/>
+              </svg>
+              <span data-i18n="hero.download">View downloads</span>
+            </a>
+            <a href="support.html" class="btn btn-secondary" data-i18n="hero.learnMore">Get support</a>
+          </div>
+          <div class="hero-proof">
+            <span class="proof-pill" data-i18n="hero.noAccount">No account</span>
+            <span class="proof-pill" data-i18n="hero.noCloud">No cloud upload</span>
+            <span class="proof-pill" data-i18n="hero.noCable">No cable</span>
+            <span class="proof-pill" data-i18n="hero.sameWifi">Same Wi-Fi</span>
+          </div>
+        </div>
+
+        <div class="hero-image fade-in">
+          <div class="phone-frame">
+            <div class="phone-screen">
+              <img data-localized-screenshot="1" data-optional-image alt="Sherit app screenshot">
+              <div class="placeholder">
+                <div class="placeholder-top"></div>
+                <div class="placeholder-lines">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="placeholder-label" data-i18n="screenshots.placeholder">Screenshot placeholder</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section screenshots" id="screenshots">
+      <div class="container">
+        <div class="section-header">
+          <h2 data-i18n="screenshots.title">Built for quick local sharing</h2>
+          <p data-i18n="screenshots.subtitle">Drop in localized screenshots later and the page will automatically use the matching assets.</p>
+        </div>
+
+        <div class="screenshots-grid">
+          <div class="screenshot-item fade-in">
+            <div class="screenshot-shell">
+              <img data-localized-screenshot="1" data-optional-image alt="Nearby devices">
+              <div class="placeholder">
+                <div class="placeholder-top"></div>
+                <div class="placeholder-lines">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="placeholder-label" data-i18n="screenshots.placeholder">Screenshot placeholder</div>
+              </div>
+            </div>
+            <div class="screenshot-label" data-i18n="screenshots.nearby">Nearby devices</div>
+          </div>
+
+          <div class="screenshot-item fade-in">
+            <div class="screenshot-shell">
+              <img data-localized-screenshot="2" data-optional-image alt="Chat and transfer">
+              <div class="placeholder">
+                <div class="placeholder-top"></div>
+                <div class="placeholder-lines">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="placeholder-label" data-i18n="screenshots.placeholder">Screenshot placeholder</div>
+              </div>
+            </div>
+            <div class="screenshot-label" data-i18n="screenshots.chat">Chat and transfer</div>
+          </div>
+
+          <div class="screenshot-item fade-in">
+            <div class="screenshot-shell">
+              <img data-localized-screenshot="3" data-optional-image alt="Receive settings and history">
+              <div class="placeholder">
+                <div class="placeholder-top"></div>
+                <div class="placeholder-lines">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="placeholder-label" data-i18n="screenshots.placeholder">Screenshot placeholder</div>
+              </div>
+            </div>
+            <div class="screenshot-label" data-i18n="screenshots.receive">Receive settings and history</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section features" id="features">
+      <div class="container">
+        <div class="section-header">
+          <h2 data-i18n="features.title">Why choose Sherit?</h2>
+          <p data-i18n="features.subtitle">Fast local discovery, flexible transfer options, and privacy-friendly sharing.</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="card fade-in">
+            <div class="card-icon blue">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 1 7.07 14.56 1 1 0 0 1-1.57-1.24 7 7 0 1 0-11 0 1 1 0 0 1-1.57 1.24A9 9 0 0 1 12 3Zm0 4a5 5 0 0 1 3.93 8.09 1 1 0 1 1-1.57-1.24 3 3 0 1 0-4.72 0 1 1 0 0 1-1.57 1.24A5 5 0 0 1 12 7Zm0 4a2 2 0 1 1 0 4 2 2 0 0 1 0-4Zm0 6a1 1 0 0 1 .9.55l1.9 3.8A1 1 0 0 1 13.9 23h-3.8a1 1 0 0 1-.9-1.45l1.9-3.8A1 1 0 0 1 12 17Z" fill="currentColor"/></svg>
+            </div>
+            <h3 data-i18n="features.discoverTitle">Scan nearby devices</h3>
+            <p data-i18n="features.discoverDesc">Automatically find devices connected to the same local network.</p>
+          </div>
+
+          <div class="card fade-in">
+            <div class="card-icon green">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H8l-4 4v-4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm3 5a1 1 0 0 0 0 2h10a1 1 0 1 0 0-2H7Zm0 4a1 1 0 1 0 0 2h6a1 1 0 1 0 0-2H7Z" fill="currentColor"/></svg>
+            </div>
+            <h3 data-i18n="features.chatTitle">Chat while transferring</h3>
+            <p data-i18n="features.chatDesc">Send text, media, documents, folders, and clipboard content in one conversation.</p>
+          </div>
+
+          <div class="card fade-in">
+            <div class="card-icon orange">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6a2 2 0 0 1 2-2h5l2 2h7a2 2 0 0 1 2 2v1H3V6Zm0 5h18l-1.2 7.2A2 2 0 0 1 17.83 20H6.17a2 2 0 0 1-1.97-1.8L3 11Z" fill="currentColor"/></svg>
+            </div>
+            <h3 data-i18n="features.folderTitle">Share entire folders</h3>
+            <p data-i18n="features.folderDesc">Move complete folders and mixed file types between phone and computer.</p>
+          </div>
+
+          <div class="card fade-in">
+            <div class="card-icon teal">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5a7 7 0 1 0 6.32 4H16a1 1 0 1 1 0-2h4a1 1 0 0 1 1 1v4a1 1 0 1 1-2 0v-.56A9 9 0 1 1 16.95 4.8a1 1 0 0 1-1.4 1.42A6.96 6.96 0 0 0 12 5Zm1 3v3.59l2.2 2.2a1 1 0 0 1-1.4 1.42l-2.5-2.5A1 1 0 0 1 11 12V8a1 1 0 1 1 2 0Z" fill="currentColor"/></svg>
+            </div>
+            <h3 data-i18n="features.reconnectTitle">Reconnect quickly</h3>
+            <p data-i18n="features.reconnectDesc">Continue recent conversations when both devices keep Sherit open.</p>
+          </div>
+
+          <div class="card fade-in">
+            <div class="card-icon purple">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5Zm0 2c-4.42 0-8 2.24-8 5v1a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-1c0-2.76-3.58-5-8-5Z" fill="currentColor"/></svg>
+            </div>
+            <h3 data-i18n="features.profileTitle">Personal profiles</h3>
+            <p data-i18n="features.profileDesc">Set your avatar, nickname, and signature for nearby devices.</p>
+          </div>
+
+          <div class="card fade-in">
+            <div class="card-icon blue">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5.1 3.41 9.86 8 11 4.59-1.14 8-5.9 8-11V5l-8-3Zm3.7 8.7-4 4a1 1 0 0 1-1.4 0l-2-2a1 1 0 1 1 1.4-1.4l1.3 1.29 3.3-3.29a1 1 0 0 1 1.4 1.4Z" fill="currentColor"/></svg>
+            </div>
+            <h3 data-i18n="features.receiveTitle">Smart receiving</h3>
+            <p data-i18n="features.receiveDesc">Confirm before receiving or automatically import photos and videos.</p>
+          </div>
+
+          <div class="card fade-in">
+            <div class="card-icon red">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h10a2 2 0 0 1 2 2v16l-7-3-7 3V5a2 2 0 0 1 2-2Zm2 5a1 1 0 0 0 0 2h6a1 1 0 1 0 0-2H9Zm0 4a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2H9Z" fill="currentColor"/></svg>
+            </div>
+            <h3 data-i18n="features.historyTitle">Transfer history</h3>
+            <p data-i18n="features.historyDesc">Keep a local record of file transfers for easy review.</p>
+          </div>
+
+          <div class="card fade-in">
+            <div class="card-icon green">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-1 19.95V14H8a1 1 0 1 1 0-2h3V9a1 1 0 1 1 2 0v3h3a1 1 0 1 1 0 2h-3v7.95A10 10 0 0 0 12 2Z" fill="currentColor"/></svg>
+            </div>
+            <h3 data-i18n="features.privacyTitle">LAN-only by design</h3>
+            <p data-i18n="features.privacyDesc">Transfers happen through your local Wi-Fi network instead of cloud servers.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section download" id="download">
+      <div class="container">
+        <div class="section-header">
+          <h2 data-i18n="download.title">Download Sherit</h2>
+          <p data-i18n="download.subtitle">Platform download links are coming soon.</p>
+        </div>
+
+        <div class="download-options">
+          <div class="download-card is-disabled">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11Z" fill="currentColor"/></svg>
+            <div><strong data-i18n="download.appStore">App Store</strong><span data-i18n="download.comingSoon">Coming soon</span></div>
+          </div>
+          <div class="download-card is-disabled">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 2 12.8 10L3 22V2Zm14.13 8.96 2.56-1.99a1.4 1.4 0 0 1 1.64 2.26L19.07 13l2.26 1.77a1.4 1.4 0 0 1-1.64 2.26l-2.56-1.99L14.52 13l2.61-2.04Z" fill="currentColor"/></svg>
+            <div><strong data-i18n="download.googlePlay">Google Play</strong><span data-i18n="download.comingSoon">Coming soon</span></div>
+          </div>
+          <div class="download-card is-disabled">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-5l1 2h2a1 1 0 1 1 0 2H6a1 1 0 1 1 0-2h2l1-2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm0 2v10h16V6H4Z" fill="currentColor"/></svg>
+            <div><strong data-i18n="download.mac">Mac</strong><span data-i18n="download.comingSoon">Coming soon</span></div>
+          </div>
+          <div class="download-card is-disabled">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.2 10 4v7H3V5.2Zm9-1.54 9-1.56V11h-9V3.66ZM3 13h7v7l-7-1.2V13Zm9 0h9v8.9l-9-1.56V13Z" fill="currentColor"/></svg>
+            <div><strong data-i18n="download.windows">Windows</strong><span data-i18n="download.comingSoon">Coming soon</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Sherit</h4>
+          <p data-i18n="footer.tagline">Local Wi-Fi chat and file transfer for nearby devices.</p>
+        </div>
+        <div class="footer-section">
+          <h4 data-i18n="footer.product">Product</h4>
+          <ul>
+            <li><a href="#features" data-i18n="footer.features">Features</a></li>
+            <li><a href="#download" data-i18n="footer.downloads">Downloads</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 data-i18n="footer.legal">Legal</h4>
+          <ul>
+            <li><a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a></li>
+            <li><a href="terms.html" data-i18n="footer.terms">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 data-i18n="footer.support">Support</h4>
+          <ul>
+            <li><a href="support.html" data-i18n="nav.support">Support</a></li>
+            <li><a href="mailto:lkx7312172@gmail.com" data-i18n="footer.contact">Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer.copyright">© 2026 Sherit. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="mailto:lkx7312172@gmail.com">lkx7312172@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js?v=20260702"></script>
+  <script src="js/main.js?v=20260702"></script>
+</body>
+</html>
