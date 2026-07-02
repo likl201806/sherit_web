@@ -94,7 +94,7 @@ const ALL_TRANSLATIONS = {
       subtitle: 'Answers for local discovery, transfer, receiving, and troubleshooting.',
       contactTitle: 'Need help?',
       contactText: 'Send us an email with your device model, system version, and what you were trying to transfer.',
-      contactEmail: 'lkx7312172@gmail.com',
+      contactEmail: '759447915@qq.com',
       faqTitle: 'Frequently Asked Questions',
       q1: 'Which devices does Sherit support?',
       a1: 'Sherit is designed for iPhone, Android, Mac, and Windows devices on the same Wi-Fi network.',
@@ -140,7 +140,7 @@ const ALL_TRANSLATIONS = {
       updatesTitle: 'Policy updates',
       updatesP: 'We may update this policy as Sherit evolves. The updated policy will show a new last updated date.',
       contactTitle: 'Contact us',
-      contactP: 'If you have questions about this privacy policy, contact us at lkx7312172@gmail.com.'
+      contactP: 'If you have questions about this privacy policy, contact us at 759447915@qq.com.'
     },
     terms: {
       metaTitle: 'Terms of Service - Sherit',
@@ -165,7 +165,7 @@ const ALL_TRANSLATIONS = {
       updatesTitle: 'Changes to these terms',
       updatesP: 'We may update these terms from time to time. Continuing to use Sherit after updates means you accept the revised terms.',
       contactTitle: 'Contact us',
-      contactP: 'If you have questions about these terms, contact us at lkx7312172@gmail.com.'
+      contactP: 'If you have questions about these terms, contact us at 759447915@qq.com.'
     }
   },
   zh_hans: {
@@ -250,7 +250,7 @@ const ALL_TRANSLATIONS = {
       subtitle: '关于设备发现、文件传输、接收设置和故障排查的常见答案。',
       contactTitle: '需要帮助？',
       contactText: '请通过邮件告诉我们你的设备型号、系统版本，以及当时正在传输的内容。',
-      contactEmail: 'lkx7312172@gmail.com',
+      contactEmail: '759447915@qq.com',
       faqTitle: '常见问题',
       q1: 'Sherit 支持哪些设备？',
       a1: 'Sherit 面向同一 Wi-Fi 下的 iPhone、Android、Mac、Windows 设备。',
@@ -296,7 +296,7 @@ const ALL_TRANSLATIONS = {
       updatesTitle: '协议更新',
       updatesP: '随着 Sherit 功能变化，我们可能更新本协议。更新后的协议会显示新的最后更新日期。',
       contactTitle: '联系我们',
-      contactP: '如果你对本隐私协议有任何疑问，请通过 lkx7312172@gmail.com 联系我们。'
+      contactP: '如果你对本隐私协议有任何疑问，请通过 759447915@qq.com 联系我们。'
     },
     terms: {
       metaTitle: '用户政策 - Sherit',
@@ -321,7 +321,7 @@ const ALL_TRANSLATIONS = {
       updatesTitle: '政策变更',
       updatesP: '我们可能不时更新本政策。更新后继续使用 Sherit，即表示你接受修订后的政策。',
       contactTitle: '联系我们',
-      contactP: '如果你对本用户政策有任何疑问，请通过 lkx7312172@gmail.com 联系我们。'
+      contactP: '如果你对本用户政策有任何疑问，请通过 759447915@qq.com 联系我们。'
     }
   }
 };
