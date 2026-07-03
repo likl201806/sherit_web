@@ -385,11 +385,40 @@ function applyTranslations() {
   updateLocalizedImages();
 }
 
+const SCREENSHOT_EXTENSIONS = ['png', 'jpeg', 'jpg'];
+
+function localizedScreenshotSrc(index, extensionIndex) {
+  const ext = SCREENSHOT_EXTENSIONS[extensionIndex];
+  if (!ext) return null;
+  return 'assets/images/screenshots/' + currentLanguage + '_' + index + '.' + ext;
+}
+
+function bindLocalizedScreenshotFallback(img) {
+  if (img.dataset.screenshotFallbackBound === 'true') return;
+  img.dataset.screenshotFallbackBound = 'true';
+
+  img.addEventListener('error', function() {
+    if (!img.hasAttribute('data-localized-screenshot')) return;
+
+    const index = img.getAttribute('data-localized-screenshot');
+    const nextIndex = parseInt(img.dataset.screenshotExtIndex || '0', 10) + 1;
+    const nextSrc = localizedScreenshotSrc(index, nextIndex);
+    if (nextSrc) {
+      img.dataset.screenshotExtIndex = String(nextIndex);
+      img.src = nextSrc;
+    }
+  });
+}
+
 function updateLocalizedImages() {
   document.querySelectorAll('[data-localized-screenshot]').forEach(function(img) {
-    const index = img.getAttribute('data-localized-screenshot');
+    bindLocalizedScreenshotFallback(img);
     img.classList.remove('screenshot-loaded');
-    img.src = 'assets/images/screenshots/' + currentLanguage + '_' + index + '.png';
+    img.dataset.screenshotExtIndex = '0';
+    const src = localizedScreenshotSrc(img.getAttribute('data-localized-screenshot'), 0);
+    if (src) {
+      img.src = src;
+    }
   });
 }
 
