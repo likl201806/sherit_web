@@ -147,11 +147,25 @@ function setupImageFallbacks() {
   });
 }
 
+function setupDownloadTracking() {
+  document.querySelectorAll('.download-card[data-platform]').forEach(function(link) {
+    link.addEventListener('click', function() {
+      if (typeof window.trackEvent !== 'function') return;
+
+      window.trackEvent('download_click', {
+        platform: this.dataset.platform,
+        page: document.body.dataset.page || 'unknown'
+      });
+    });
+  });
+}
+
 document.addEventListener('DOMContentLoaded', function() {
   setupNavLinks();
   setupSmoothScroll();
   setupFadeInAnimations();
   setupImageFallbacks();
+  setupDownloadTracking();
   handlePageScroll();
   updateActiveNav();
 
