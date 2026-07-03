@@ -68,11 +68,14 @@ const ALL_TRANSLATIONS = {
     },
     download: {
       title: 'Download Sherit',
-      subtitle: 'Platform download links are coming soon. The site is ready for App Store, Google Play, Mac, and Windows links when you provide them.',
-      comingSoon: 'Coming soon',
+      subtitle: 'Get Sherit on your device. iPhone, iPad, and Mac open the App Store; Android and Windows download directly.',
       appStore: 'App Store',
-      googlePlay: 'Google Play',
+      onAppStore: 'On the App Store',
+      directDownload: 'Direct download',
+      iphone: 'iPhone',
+      ipad: 'iPad',
       mac: 'Mac',
+      android: 'Android (APK)',
       windows: 'Windows'
     },
     footer: {
@@ -224,11 +227,14 @@ const ALL_TRANSLATIONS = {
     },
     download: {
       title: '下载 Sherit',
-      subtitle: '平台下载链接即将提供。网站已预留 App Store、Google Play、Mac、Windows 下载入口。',
-      comingSoon: '即将推出',
+      subtitle: '在你的设备上获取 Sherit。iPhone、iPad、Mac 将跳转 App Store，Android 与 Windows 可直接下载。',
       appStore: 'App Store',
-      googlePlay: 'Google Play',
+      onAppStore: '前往 App Store',
+      directDownload: '直接下载',
+      iphone: 'iPhone',
+      ipad: 'iPad',
       mac: 'Mac',
+      android: 'Android（APK）',
       windows: 'Windows'
     },
     footer: {
