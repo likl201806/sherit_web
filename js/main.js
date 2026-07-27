@@ -1,5 +1,5 @@
 /**
- * Sherit Website Main JavaScript
+ * ShareMe Website Main JavaScript
  */
 
 function toggleMobileMenu() {
