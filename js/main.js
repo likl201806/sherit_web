@@ -148,12 +148,23 @@ function setupImageFallbacks() {
 }
 
 function setupDownloadTracking() {
+  const downloadEventNames = {
+    iphone: 'download_iphone',
+    ipad: 'download_ipad',
+    mac: 'download_mac',
+    android: 'download_android',
+    windows: 'download_windows'
+  };
+
   document.querySelectorAll('.download-card[data-platform]').forEach(function(link) {
     link.addEventListener('click', function() {
       if (typeof window.trackEvent !== 'function') return;
 
-      window.trackEvent('download_click', {
-        platform: this.dataset.platform,
+      const platform = this.dataset.platform;
+      const eventName = downloadEventNames[platform] || 'download_click';
+
+      window.trackEvent(eventName, {
+        platform: platform,
         page: document.body.dataset.page || 'unknown'
       });
     });
