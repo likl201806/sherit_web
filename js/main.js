@@ -1,5 +1,5 @@
 /**
- * ShareMe Website Main JavaScript
+ * MeDrop Website Main JavaScript
  */
 
 function toggleMobileMenu() {

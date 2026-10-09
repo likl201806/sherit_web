@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ShareMe OAuth 回调</title>
+  <title>MeDrop OAuth 回调</title>
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -41,16 +41,16 @@
 </head>
 <body>
   <div class="card">
-    <h1>ShareMe OAuth 回调页</h1>
+    <h1>MeDrop OAuth 回调页</h1>
     <p class="ok">页面已成功部署。</p>
     <p id="status">
-      若从 App 授权跳转而来，正在尝试返回 ShareMe…
+      若从 App 授权跳转而来，正在尝试返回 MeDrop…
     </p>
     <p>
-      <a class="btn" id="openApp" href="sherit://oauth-callback">打开 ShareMe</a>
+      <a class="btn" id="openApp" href="sherit://oauth-callback">打开 MeDrop</a>
     </p>
     <p style="font-size:13px;color:#94a3b8;">
-      在电脑浏览器打开时保持空白/无法进 App 是正常的；请在手机 ShareMe 里完成授权。
+      在电脑浏览器打开时保持空白/无法进 App 是正常的；请在手机 MeDrop 里完成授权。
     </p>
   </div>
   <script>
@@ -64,7 +64,7 @@
 
       // 有授权参数时才自动跳转（避免你在电脑上验收时立刻跳走变「空白」）。
       if (q || (hash && hash.length > 1)) {
-        status.textContent = '检测到授权参数，正在返回 ShareMe…';
+        status.textContent = '检测到授权参数，正在返回 MeDrop…';
         setTimeout(function () {
           window.location.replace(target);
         }, 300);
